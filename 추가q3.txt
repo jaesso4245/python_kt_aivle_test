@@ -15,7 +15,7 @@ def solution(a,b):
     return sum
 
 
-x = int(input('정수x는?:'))
-y = int(input('정수y는?:'))
+x = int(input('left는?:'))
+y = int(input('right는?:'))
 
 print(f'{solution(x,y)}')
