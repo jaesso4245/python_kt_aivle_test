@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+print(f'보유한 물건을 입력하세요')
+store = list(map(int, input().split()))
+
+print(f'찾으시는 물건을 입력하세요')
+customer = list(map(int, input().split()))
+
+
+for i in range(len(customer)):
+    nocount = 1
+    for j in range(len(store)):
+        if customer[i] == store[j]:
+            print(f'yes')
+            break
+        if nocount == len(store):
+            print(f'no')
+        nocount += 1
+        
